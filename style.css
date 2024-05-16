@@ -220,10 +220,11 @@ section {
 
 .project-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
+    margin: 5rem 1rem;
 }
 
 .row {
@@ -285,10 +286,12 @@ section {
 }
 
 .row:hover {
-    transform: scale(0.9);
-}
-
-.row:hover .layer {
+    transform: scale(1.1);
+    transition: all 100ms ;
+  }
+  
+  .row:hover .layer {
+  overflow: hidden;
     height: 100%;
 }
 
